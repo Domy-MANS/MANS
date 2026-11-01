@@ -17,14 +17,14 @@
 
 ## 系统结构
 
-```mermaid
-flowchart TD
-    A["AS5047P 编码器<br/>通过 SPI 读取关节角度"] --> B["位置环 PID<br/>输出目标速度"]
-    T["目标曲线<br/>100 Hz 更新"] --> B
-    B --> C["速度环 PID<br/>输出 PWM 占空比"]
-    C --> D["DRV8701 + MOSFET H 桥"]
-    D --> E["电机与肘关节"]
-    E --> A
+```text
+Target curve (100 Hz)
+        |
+        v
+  Position PID --> Speed PID --> DRV8701 + H-bridge --> Motor and elbow joint
+        ^                                                        |
+        |                                                        |
+        +----------------- AS5047P joint angle <-----------------+
 ```
 
 ## 机械设计

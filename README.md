@@ -17,14 +17,14 @@ The first hardware prototype of MANS: a wearable elbow joint with its own motor 
 
 ## System
 
-```mermaid
-flowchart TD
-    A["AS5047P encoder<br/>joint angle over SPI"] --> B["Position PID<br/>target speed"]
-    T["Target curve<br/>updated at 100 Hz"] --> B
-    B --> C["Speed PID<br/>PWM duty"]
-    C --> D["DRV8701 + MOSFET H-bridge"]
-    D --> E["Motor and elbow joint"]
-    E --> A
+```text
+Target curve (100 Hz)
+        |
+        v
+  Position PID --> Speed PID --> DRV8701 + H-bridge --> Motor and elbow joint
+        ^                                                        |
+        |                                                        |
+        +----------------- AS5047P joint angle <-----------------+
 ```
 
 ## Mechanical design

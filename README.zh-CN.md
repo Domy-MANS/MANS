@@ -43,10 +43,28 @@ Target curve (100 Hz)
 
 | 原理图 | 功能 | 主要器件 |
 |---|---|---|
-| [电源](docs/images/schematic-power.jpg) | 24 V 输入，降压到 3.3 V | TPS5430、XT30 输入 |
-| [主控](docs/images/schematic-mcu.jpg) | 控制器、16 MHz 晶振、SWD 和串口接口 | STM32F103C8T6 |
-| [驱动](docs/images/schematic-driver.jpg) | 有刷电机 H 桥，带 5 mΩ 电流采样电阻 | DRV8701、四颗 HYG015N04 MOSFET |
-| [传感](docs/images/schematic-sensing.jpg) | 关节角度、温度和输入电压采样 | AS5047P、10 kΩ NTC 热敏电阻 |
+| 电源 | 24 V 输入，降压到 3.3 V | TPS5430、XT30 输入 |
+| 主控 | 控制器、16 MHz 晶振、SWD 和串口接口 | STM32F103C8T6 |
+| 驱动 | 有刷电机 H 桥，带 5 mΩ 电流采样电阻 | DRV8701、四颗 HYG015N04 MOSFET |
+| 传感 | 关节角度、温度和输入电压采样 | AS5047P、10 kΩ NTC 热敏电阻 |
+
+### 原理图
+
+**电源**
+
+![电源原理图：基于 TPS5430 的 24 V 转 3.3 V 降压电路](docs/images/schematic-power.jpg)
+
+**主控**
+
+![主控原理图：STM32F103C8T6、晶振、SWD 和串口接口](docs/images/schematic-mcu.jpg)
+
+**驱动**
+
+![驱动原理图：DRV8701 和四颗 MOSFET 组成的电机 H 桥](docs/images/schematic-driver.jpg)
+
+**传感**
+
+![传感原理图：AS5047P 编码器、温度和输入电压采样](docs/images/schematic-sensing.jpg)
 
 ## 固件
 

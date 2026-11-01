@@ -43,10 +43,28 @@ The board is a four-sheet Altium Designer project:
 
 | Sheet | Function | Key parts |
 |---|---|---|
-| [Power](docs/images/schematic-power.jpg) | 24 V input to 3.3 V buck supply | TPS5430, XT30 input |
-| [MCU](docs/images/schematic-mcu.jpg) | Controller, 16 MHz crystal, SWD and UART headers | STM32F103C8T6 |
-| [Driver](docs/images/schematic-driver.jpg) | Brushed motor H-bridge with a 5 mΩ current shunt | DRV8701, four HYG015N04 MOSFETs |
-| [Sensing](docs/images/schematic-sensing.jpg) | Joint angle, temperature and input voltage sensing | AS5047P, 10 kΩ NTC thermistors |
+| Power | 24 V input to 3.3 V buck supply | TPS5430, XT30 input |
+| MCU | Controller, 16 MHz crystal, SWD and UART headers | STM32F103C8T6 |
+| Driver | Brushed motor H-bridge with a 5 mΩ current shunt | DRV8701, four HYG015N04 MOSFETs |
+| Sensing | Joint angle, temperature and input voltage sensing | AS5047P, 10 kΩ NTC thermistors |
+
+### Schematics
+
+**Power**
+
+![Power sheet: 24 V to 3.3 V buck supply built around the TPS5430](docs/images/schematic-power.jpg)
+
+**MCU**
+
+![MCU sheet: STM32F103C8T6 with crystal, SWD and UART headers](docs/images/schematic-mcu.jpg)
+
+**Driver**
+
+![Driver sheet: DRV8701 and four MOSFETs forming the motor H-bridge](docs/images/schematic-driver.jpg)
+
+**Sensing**
+
+![Sensing sheet: AS5047P encoder, temperature and input voltage sensing](docs/images/schematic-sensing.jpg)
 
 ## Firmware
 

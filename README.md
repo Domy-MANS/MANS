@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-light.png" />
-    <img src="docs/images/logo-dark.png" width="560" alt="MANS Industries" />
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/mans-logo-white.png" />
+    <img src="docs/images/mans-logo-black.png" width="560" alt="MANS Industries" />
   </picture>
 </p>
 

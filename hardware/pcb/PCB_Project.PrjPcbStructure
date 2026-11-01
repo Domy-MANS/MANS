@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=01 POW.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=01 POW.SchDoc|FileName=02 MCU.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=01 POW.SchDoc|FileName=03 DRV.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=01 POW.SchDoc|FileName=04 Sensing.SchDoc|SheetNumber=4

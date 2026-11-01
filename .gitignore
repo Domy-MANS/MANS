@@ -1,0 +1,24 @@
+# Keil MDK build output and per-user settings
+firmware/elbowEXO/MDK-ARM/elbowEXO/
+firmware/elbowEXO/MDK-ARM/RTE/
+*.uvguix.*
+*.lst
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.map
+
+# Altium Designer generated files
+History/
+__Previews/
+Project Logs for */
+Project Outputs for */
+
+# SolidWorks lock files
+~$*
+
+# Windows
+desktop.ini
+Thumbs.db

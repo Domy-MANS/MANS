@@ -18,7 +18,7 @@ The first hardware prototype of MANS: a wearable elbow joint with its own motor 
 ## System
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["AS5047P encoder<br/>joint angle over SPI"] --> B["Position PID<br/>target speed"]
     T["Target curve<br/>updated at 100 Hz"] --> B
     B --> C["Speed PID<br/>PWM duty"]

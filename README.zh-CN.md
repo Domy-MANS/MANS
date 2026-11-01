@@ -18,7 +18,7 @@
 ## 系统结构
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["AS5047P 编码器<br/>通过 SPI 读取关节角度"] --> B["位置环 PID<br/>输出目标速度"]
     T["目标曲线<br/>100 Hz 更新"] --> B
     B --> C["速度环 PID<br/>输出 PWM 占空比"]
